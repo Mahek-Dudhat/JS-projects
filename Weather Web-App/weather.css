@@ -1,0 +1,142 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+body {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+STYLING THE WEATHER CARD: */
+#main {
+    height: 85vh;
+    width: 30vw;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+}
+
+/* 
+STYLING THE SEARCHBOX: */
+
+#main>#SearchBox {
+    width: 80%;
+    height: 20%;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#SearchBox>input {
+    height:35%;
+    border: none;
+    outline: 0;
+    border-radius: 30px;
+}
+
+/* STYLING THE SEARCH ICON: */
+
+#SearchBox>#search {
+    height: 3rem;
+    width: 4rem;
+    background-color: white;
+    margin-left: 2rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+
+    }
+}
+
+#search>i {
+    height: 2rem;
+    width: 1.2rem;
+}
+
+#weather{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#weather>img{
+    width: 160px;
+    height: 240px;
+    overflow: hidden;
+}
+
+.row{
+    margin-top: 2rem;
+}
+
+#weather #detail1,#detail2{
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+#weather #detail1>img{
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 1rem;
+}
+
+#weather #detail2>img{
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 1rem;
+}
+
+#detail1 div p{
+   white-space: nowrap;
+   margin-bottom: 0;
+}
+ #detail2 div p{
+   white-space: nowrap;
+   margin-bottom: 0;
+ }
+
+ #weather{
+    display: none;
+ }
+
+ /* STYLING ERROR MESSAGE WHEN ERROR OCCURED: */
+ #main #ErrorMsg{
+     opacity: 0;
+ }
+
+
+
+/* RESPONSIVENESS OF CONTAINER: */
+
+@media screen and (max-width:1084px) {
+    #main{
+        width: 80%;
+    }
+}

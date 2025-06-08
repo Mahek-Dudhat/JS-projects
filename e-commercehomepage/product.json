@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "LOOI LONG CHAIR",
+        "price": 200,
+        "image": "1.png"
+    },
+    {
+        "id": 2,
+        "name": "LOOI LONG CHAIR2",
+        "price": 300,
+        "image": "2.png"
+    },
+    {
+        "id": 3,
+        "name": "LOOI LONG CHAIR3",
+        "price": 700,
+        "image": "3.png"
+    },
+    {
+        "id": 4,
+        "name": "LOOI LONG CHAIR4",
+        "price": 1000,
+        "image": "4.png"
+    },
+    {
+        "id": 5,
+        "name": "LOOI LONG CHAIR5",
+        "price": 800,
+        "image": "5.png"
+    },
+    {
+        "id": 6,
+        "name": "LOOI LONG CHAIR6",
+        "price": 1100,
+        "image": "6.png"
+    },
+    {
+        "id": 7,
+        "name": "LOOI LONG CHAIR7",
+        "price": "2000",
+        "image": "7.png"
+    },
+    {
+        "id": 8,
+        "name": "LOOI LONG CHAIR8",
+        "price": 1500,
+        "image": "8.png"
+    }
+]

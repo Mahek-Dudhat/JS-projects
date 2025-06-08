@@ -1,0 +1,108 @@
+/* BASIC STYLING: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* MAIN SECTION STYLING: */
+#main {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER STYLING: */
+.container {
+    background-color: #f0f0f0;
+    height: 600px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    color: #000;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 2rem 0 1rem 1rem;
+}
+
+.container #inp {
+    width: 90%;
+    margin: 0 1rem 0 1rem;
+}
+
+.container #btn {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 1.1rem;
+    transition: all 0.3s ease 0.3s;
+    border:none;
+    cursor:pointer;
+}
+
+.container #btn:hover {
+    background-color: #5a2d91;
+}
+
+#imgDiv{
+    width: 250px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#imgDiv img{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#imgDiv.showImg{
+    
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid black;
+   
+}
+
+/* ANIMATION FOR INPUTBOX: */
+
+.error{
+    border: 2px solid red;
+    animation: Shake 0.3s linear 10;
+}
+
+@keyframes Shake{
+    0%{
+        transform: translateX(0px);
+
+    }
+
+    25%{
+        transform: translateX(-5px);
+    }
+
+    50%{
+        transform: translateX(0px);
+
+    }
+
+    75%{
+        transform: translateX(5px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+
+    
+}
+

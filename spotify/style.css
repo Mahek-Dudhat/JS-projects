@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+nav {
+    height: 60px;
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    font-family: 'poppins', sans-serif;
+}
+
+nav ul .brand {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav ul img {
+    width: 40px;
+    padding: 0 3px 0 10px;
+}
+
+.container {
+    height: 72vh;
+    width: 70%;
+    background: black;
+    margin: 23px auto;
+    border-radius: 12px;
+    color: white;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+.container .songList h2 {
+    padding: 25px;
+}
+
+.songItems {
+    height: 50px;
+    background: white;
+    display: flex;
+    color: black;
+    width: 30vw;
+    border-radius: 34px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 9px 20px;
+}
+
+.songItems img {
+    width: 50px;
+    border-radius: 34px;
+}
+
+.songItems .songListPlay {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.songItems .songListPlay .timeStamp {
+    padding-right: 3px;
+}
+
+.songItems .songListPlay i:hover{
+     cursor: pointer;
+}
+
+.songItems .songListPlay i{
+    margin: 0 7px;
+}
+
+.songItems .songName{
+    margin: auto;
+    max-width: 200px;
+}
+
+
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    flex-direction: column;
+    color: white;
+
+}
+
+.bottom #myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.bottom .icons {
+    font-size: 23px;
+}
+
+.bottom .icons i:hover{
+      cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    margin-top: 25px;
+    font-family: "Varela Round", sans-serif;
+}
+
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}

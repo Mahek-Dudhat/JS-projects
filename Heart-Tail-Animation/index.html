@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Tail Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <script>
+        let body = document.querySelector("body");
+
+        body.addEventListener("mousemove", (e) => {
+
+            let xPos = e.clientX;
+            let yPos = e.clientY;
+
+            let spanEle = document.createElement("span");
+
+            let size = Math.random() * 100;
+
+            spanEle.style.width = 10 + size + "px";
+            spanEle.style.height = 10 + size + "px";
+
+            body.appendChild(spanEle);
+
+            spanEle.style.left = xPos + "px";
+            spanEle.style.top = yPos + "px";
+
+            setTimeout(() => {
+                spanEle.remove();
+            }, 3000);
+        })
+
+    </script>
+</body>
+
+</html>

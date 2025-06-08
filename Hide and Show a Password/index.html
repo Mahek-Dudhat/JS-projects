@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Show a Input field password</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="inputBox">
+            <input type="password" placeholder="Password" name="password" id="password">
+            <i class="fa-solid fa-eye-slash" id="eyeIcon"></i>
+        </div>
+
+    </div>
+
+    <script>
+
+        let password = document.querySelector("#password");
+        let eyeIcon = document.querySelector("#eyeIcon");
+        let inputBox = document.querySelector("#inputBox");
+
+        eyeIcon.addEventListener("click",()=>{
+            if(password.type == "password"){
+                password.type = "text";
+                eyeIcon.classList.add("fa-eye");
+                eyeIcon.classList.remove("fa-eye-slash");
+            }else{
+                password.type = "password";
+                eyeIcon.classList.remove("fa-eye");
+                eyeIcon.classList.add("fa-eye-slash");
+            }
+        })
+
+        password.addEventListener("click",()=>{
+            inputBox.style.border = "2px solid skyblue";
+            inputBox.style.boxShadow = "0 0 5px skyblue";
+        })
+
+        password.addEventListener("blur",()=>{
+            inputBox.style.border = "none";
+            inputBox.style.boxShadow = "none";
+        })
+    </script>
+
+</body>
+
+</html>

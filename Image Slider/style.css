@@ -1,0 +1,97 @@
+/* BASIC STYLING: */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #191919;
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#imageBox {
+
+    width: 550px;
+    display: flex;
+    /* align-items: center; */
+    overflow-x: scroll;
+    /* overflow-y: hidden;
+    scroll-behavior: smooth; */
+}
+
+.imgDiv {
+    height: 100%;
+    width: 100%;
+    flex: none;
+    padding: 1.5rem;
+}
+
+#imageBox img {
+    width: 10rem;
+    filter: grayscale(100%);
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#imageBox img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#backBtn {
+    font-weight: 900;
+    padding-right: 5rem;
+    font-size: 2.5rem;
+    width: 3rem;
+    color: orange;
+    cursor: pointer;
+}
+
+#nextBtn {
+    font-weight: 900;
+    padding-left: 3rem;
+    font-size: 2.5rem;
+    width: 3rem;
+    color: orange;
+    cursor: pointer;
+}
+
+#imageBox::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* RESPONSIVESS OF A WEBSITE: */
+
+@media screen and (max-width: 520px) {
+    #imageBox {
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #imageBox img {
+        width: 10rem;
+    }
+
+}
