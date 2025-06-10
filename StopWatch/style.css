@@ -20,7 +20,7 @@ body .container {
     width: 45%;
     background-color: #000000;
     color: white;
-    background-image: url("stopwatch.jpg");
+    background-image: url("./Images/stopwatch.jpg");
     overflow: hidden;
     background-position: center;
     background-size: cover;
