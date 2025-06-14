@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content=" Welcome to  MK-EduHub, your gateway to knowledge and skill development. We are dedicated to
+    providing high-quality, accessible education for learners of all ages and backgrounds..">
+
+    <meta name="author" content="MK-EDUHUB">
+
+    <meta name="keywords" content="MK-EDUHUB,E-COMMERCE,Online Hub,Shopping">
+
+    <meta name="robots" content="index, follow">
+
+    <title>MKHUB E-COMMERCE WEBSITE-Home Page</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- THIS IS A NAVBAR SECTION: -->
+
+    <header class="section-navbar">
+
+        <section class="top-txt">
+
+            <div class="head container">
+                <div class="head-txt">
+                    <p>Free shipping, 30-day return or refund guarantee.</p>
+                </div>
+
+                <div class="sign-in-up">
+                    <a href="#">SIGN IN</a>
+                    <a href="#">SIGN UP</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="navbar-brand" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <h2 style="font-weight: bold;">MK-EDUHUB</h2>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="nav-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a
+                            class="nav-link active" href="index.html">HOME</a></li>
+                    <li class="nav-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a class="nav-link"
+                            href="./about.html">ABOUT US</a></li>
+                    <li class="nav-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a class="nav-link"
+                            href="./service.html"> PRODUCTS</a></li>
+
+                    <li class="nav-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a class="nav-link"
+                            href="./contact.html">CONTACT</a></li>
+
+                    <li class="nav-item cart" id="cartValue" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <a href="./cart.html" class="btn btn-dark"><i class="fa-solid fa-cart-shopping"></i> 0</a>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- ADD TO CART ELEMENT SECTION: -->
+
+    <section class="add-to-cart-element">
+        <div class="container">
+            <section>
+                <div class="product-cart-container">
+
+                </div>
+            </section>
+
+            <section class="product-cart-total-elem">
+                <div class="product-cart-total-element">
+                    <p>Selected Offer Summary</p>
+                    <div class="product-order-total">
+                        <div>
+                            <P>Sub Total:</P>
+                            <p class="product-sub-total">0</p>
+                        </div>
+
+                        <div>
+                            <p>Tax:</p>
+                            <p class="product-tax">₹50</p>
+                        </div>
+
+                        <hr />
+                        <div>
+                            <p>Total:</p>
+                            <p class="product-total">0</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <template id="product-cart-template">
+        <div class="cards" id="cardValue">
+            <article class="information [card]">
+                <div>
+                    <span class="category">Laptop</span>
+                </div>
+
+                <div class="img-cart-container">
+                    <img src="./Images/laptop-CT_LaLd8.png" class="product-cart-img" alt="product" />
+                </div>
+
+                <h3 class="product-name mx-5">
+
+                </h3>
+
+                <div class="product-price">
+
+                </div>
+
+                <div class="stock-element">
+                    <button class="cart-increment">+</button>
+                    <p class="product-quantity">1</p>
+                    <button class="cart-decrement">-</button>
+                </div>
+
+                <button class="btn btn-dark remove-to-cart-button">
+                    Remove
+                </button>
+            </article>
+        </div>
+    </template>
+
+    <!-- FOOTER SECTION: -->
+
+    <footer class="footer-section">
+        <div class="container footer-container">
+            <div class="footer-one">
+                <div class="logo-brand">
+                    <a href="index.html" target="_self" class="footer-subheading" style="padding: 0;"> MK-EDUHUB</a>
+                </div>
+
+                <p class="footer-para" style="color: #c1c5cb;">
+                    Welcome to Thapa EcomStore, your ultimate destination for cutting-edge gadgets!
+                </p>
+
+                <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" />
+            </div>
+
+            <div class="footer-two">
+                <p class="footer-subheading">SHOPPING</p>
+                <ul>
+                    <li><a href="#">Computer Store</a></li>
+                    <li><a href="#">Laptop Store</a></li>
+                    <li> <a href="#">Accessories</a></li>
+                    <li><a href="#">Sales & Discount</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-three">
+                <p class="footer-subheading">Links</p>
+                <ul>
+                    <li> <a href="./contact.html">Contact Us</a></li>
+                    <li> <a href="" target="_blank">Payment Method</a></li>
+                    <li> <a href="" target="_blank">Delivery</a> </li>
+                    <li> <a href="" target="_blank">Return and Exchange</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-four">
+                <h4 class="footer-subheading" style="color: white; padding: 0;">NEWSLETTER</h4>
+                <p style="text-align: left;">Be the first to know about new<br />arrivals, sales & promos!</p>
+                <div class="f-mail">
+                    <input type="email" placeholder="Your Email"
+                        style="background-color: black; padding: 0.5rem 1rem; border: 1px solid #c1c5cb;" />
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <hr />
+            </div>
+
+
+        </div>
+        <section style="width: 100vw; background-color: #c1c5cb; height: 1px;"></section>
+        <div class="f-design">
+            <div class="f-design-txt">
+                <p style="text-align: center;" class="mt-4">Design and Code by MK-EDUHUB</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="module" src="showAddToCards.js"></script>
+
+</body>
+
+</html>

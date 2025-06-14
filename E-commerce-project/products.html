@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content=" Welcome to  MK-EduHub, your gateway to knowledge and skill development. We are dedicated to
+    providing high-quality, accessible education for learners of all ages and backgrounds..">
+
+    <meta name="author" content="MK-EDUHUB">
+
+    <meta name="keywords" content="MK-EDUHUB,E-COMMERCE,Online Hub,Shopping">
+
+    <meta name="robots" content="index, follow">
+
+    <title>MKHUB E-COMMERCE WEBSITE-Home Page</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- THIS IS A NAVBAR SECTION: -->
+
+    <header class="section-navbar">
+
+        <section class="top-txt">
+
+            <div class="head container">
+                <div class="head-txt">
+                    <p>Free shipping, 30-day return or refund guarantee.</p>
+                </div>
+
+                <div class="sign-in-up">
+                    <a href="# ">SIGN IN</a>
+                    <a href="# ">SIGN UP</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="navbar-brand" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <h2 style="font-weight: bold;">MK-EDUHUB</h2>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="nav-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a
+                            class="nav-link active" href="index.html">HOME</a></li>
+                    <li class="nav-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a class="nav-link"
+                            href="./about.html">ABOUT US</a></li>
+                    <li class="nav-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a class="nav-link"
+                            href="./products.html">PRODUCTS</a></li>
+
+                    <li class="nav-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a class="nav-link"
+                            href="./contact.html">CONTACT</a></li>
+
+                    <li class="nav-item cart" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a
+                            href="./cart.html" class="btn btn-dark"><i class="fa-solid fa-cart-shopping"></i> 0</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- HOME PAGE PRODUCT SECTION: -->
+
+    <section class="main-product-section mt-5">
+        <div class="container p1">
+            <h2 class="section-common-heading">Why Choose MK Store</h2>
+            <p class="section-common-subheading">
+                Choose MK-EduHub for a holistic, enriching learning experience that
+                empowers you to achieve your goals.
+            </p>
+        </div>
+
+        <section class="container p2 mb-5">
+            <div class="main-product-container">
+
+            </div>
+        </section>
+    </section>
+
+    <!-- Template for a product -->
+
+    <template id="product-template">
+        <div class="cards" id="cardValue">
+            <div class="card information [card] shadow">
+                <span class="category"></span>
+                <div class="img-container">
+                    <img class="product-img" src="" alt="" />
+                </div>
+
+                <div class="card-body">
+                    <h2 class="product-name card-title"></h2>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star" style="color:#F0DB81;"></i><i class="fa-solid fa-star"
+                            style="color:#F0DB81;"></i><i class="fa-solid fa-star" style="color:#F0DB81;"></i><i
+                            class="fa-solid fa-star" style="color:#F0DB81;"></i><i class="fa-solid fa-star"
+                            style="color:#F0DB81;"></i>
+                    </div>
+
+                    <p class="product-desc">
+                    </p>
+
+                    <div class="product-price-element">
+                        <p class="product-price"></p>
+                        <p class="product-actual-price" style="text-decoration: line-through;"></p>
+                    </div>
+
+                    <div class="products-stock-element">
+                        <p class="product-property">Total Stocks Available:</p>
+                        <p class="product-stock"></p>
+                    </div>
+
+                    <div class="product-quantity-element">
+                        <p class="product-property">Quantity(Pieces)</p>
+                        <div class="stock-element">
+                            <button class="cart-increment">+</button>
+                            <p class="product-quantity" style="padding:1rem;">1</p>
+                            <button class="cart-decrement">-</button>
+                        </div>
+                    </div>
+
+                    <button class="add-to-cart-button btn btn-dark">
+                        <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </template>
+
+
+
+    <!-- FOOTER SECTION: -->
+
+    <footer>
+       <script src="footer.js"></script>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
